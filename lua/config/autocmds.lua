@@ -5,3 +5,9 @@ auto_cmd("TextYankPost", {
 		vim.highlight.on_yank()
 	end,
 })
+
+auto_cmd("QuitPre", {
+	callback = function()
+		vim.cmd([[wa]])
+	end,
+})

@@ -11,14 +11,28 @@ return {
 			desc = "Search files",
 		},
 		{
-			"<leader>fg",
+			"<leader>fh",
+			function()
+				require("fzf-lua").live_grep({ resume = true })
+			end,
+			desc = "Find help.",
+		},
+		{
+			"<leader>fk",
+			function()
+				require("fzf-lua").live_grep({ resume = true })
+			end,
+			desc = "Find Keymap.",
+		},
+		{
+			"<leader>fl",
 			function()
 				require("fzf-lua").live_grep({ resume = true })
 			end,
 			desc = "Live grep.",
 		},
 		{
-			"<leader>fcc",
+			"<leader>fc",
 			function()
 				require("fzf-lua").files({ cwd = vim.fn.stdpath("config") })
 			end,
@@ -32,67 +46,53 @@ return {
 			desc = "Resume",
 		},
 		{
-			"<leader>fgb",
+			"<leader>fgB",
 			function()
 				require("fzf-lua").git_branches()
 			end,
-			desc = "Search git branches",
+			desc = "[G]it [B]ranches",
 		},
 		{
 			"<leader>fgc",
 			function()
 				require("fzf-lua").git_commits()
 			end,
-			desc = "Search git commits",
+			desc = "[G]it [C]ommits",
 		},
 		{
-			"<leader>fgl",
+			"<leader>fgb",
 			function()
 				require("fzf-lua").git_blame()
 			end,
-			desc = "Git blame",
+			desc = "[G]it [B]lame",
 		},
 		{
-			"<leader>fdd",
+			"<leader><leader>",
 			function()
-				require("fzf-lua").diagnostics_document()
+				require("fzf-lua").buffers()
 			end,
-			desc = "Search document diagnostics.",
+			desc = "[ ] Find existing buffers",
 		},
 		{
-			"<leader>fdw",
+			"<leader>fb",
 			function()
-				require("fzf-lua").diagnostics_workspace()
+				require("fzf-lua").builtin()
 			end,
-			desc = "Search workspace diagnostics",
+			desc = "[F]ind [B]uiltin FZF",
 		},
 		{
-			"<leader>fcr",
+			"<leader>fo",
 			function()
-				require("fzf-lua").lsp_references()
+				require("fzf-lua").oldfiles()
 			end,
-			desc = "Lsp references.",
+			desc = "[F]ind [O]ld Files",
 		},
 		{
-			"<leader>fcd",
+			"<leader>/",
 			function()
-				require("fzf-lua").lsp_declarations()
+				require("fzf-lua").lgrep_curbuf()
 			end,
-			desc = "Lsp declarations",
-		},
-		{
-			"<leader>fcf",
-			function()
-				require("fzf-lua").lsp_definitions()
-			end,
-			desc = "Lsp definations",
-		},
-		{
-			"<leader>fca",
-			function()
-				require("fzf-lua").lsp_code_actions()
-			end,
-			desc = "Lsp code actions",
+			desc = "[/] Live grep the current buffer",
 		},
 	},
 }

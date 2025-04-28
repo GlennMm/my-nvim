@@ -1,5 +1,6 @@
 vim.g.have_nerd_font = false
 vim.opt.number = false
+vim.opt.relativenumber = true
 vim.opt.mouse = "a"
 vim.opt.showmode = false
 vim.schedule(function()
@@ -33,3 +34,5 @@ vim.opt.foldlevelstart = 99
 vim.opt.foldenable = true
 vim.opt.cmdheight = 0
 vim.opt.whichwrap:append("<>[]hl")
+
+vim.g.have_nerd_font = true

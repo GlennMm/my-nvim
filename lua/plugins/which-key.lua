@@ -4,6 +4,12 @@ return {
 	---@class wk.Opts
 	opts = {
 		preset = "modern",
+		spec = {
+			{ "<leader>c", group = "[C]ode" },
+			{ "<leader>t", group = "[T]oggle" },
+			{ "<leader>f", group = "[F]ind" },
+			{ "<leader>fg", group = "[G]it" },
+		},
 		-- your configuration comes here
 		-- or leave it empty to use the default settings
 		-- refer to the configuration section below
