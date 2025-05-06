@@ -1,5 +1,6 @@
 return {
-  'echasnovski/mini.statusline',
-  version = false,
-  opts = {}
+	"echasnovski/mini.statusline",
+	event = {"VimEnter"},
+	version = false,
+	opts = {},
 }

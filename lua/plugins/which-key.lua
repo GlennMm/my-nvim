@@ -9,6 +9,8 @@ return {
 			{ "<leader>t", group = "[T]oggle" },
 			{ "<leader>f", group = "[F]ind" },
 			{ "<leader>fg", group = "[G]it" },
+			{ "<leader>s", group = "Auto[S]ave" },
+			{ "<leader>T", group = "[T]rouble" },
 		},
 		-- your configuration comes here
 		-- or leave it empty to use the default settings

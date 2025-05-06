@@ -1,3 +1,9 @@
+-- Make sure to setup `mapleader` and `maplocalleader` before
+-- loading lazy.nvim so that mappings are correct.
+-- This is also a good place to setup other settings (vim.opt)
+vim.g.mapleader = " "
+vim.g.maplocalleader = "\\"
+
 vim.g.have_nerd_font = false
 vim.opt.number = false
 vim.opt.relativenumber = true
@@ -34,5 +40,5 @@ vim.opt.foldlevelstart = 99
 vim.opt.foldenable = true
 vim.opt.cmdheight = 0
 vim.opt.whichwrap:append("<>[]hl")
-
+vim.opt.laststatus = 3
 vim.g.have_nerd_font = true
