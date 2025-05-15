@@ -1,17 +1,13 @@
--- Make sure to setup `mapleader` and `maplocalleader` before
--- loading lazy.nvim so that mappings are correct.
--- This is also a good place to setup other settings (vim.opt)
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
+vim.g.have_nerd_font = true
 
-vim.g.have_nerd_font = false
+vim.o.termguicolors = true
+
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.mouse = "a"
 vim.opt.showmode = false
-vim.schedule(function()
-	vim.opt.clipboard = "unnamedplus"
-end)
 vim.opt.breakindent = true
 vim.opt.undofile = true
 vim.opt.ignorecase = true
@@ -28,11 +24,11 @@ vim.opt.softtabstop = 4
 vim.opt.smarttab = true
 vim.opt.smartindent = true
 vim.opt.autoindent = true
-vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
 vim.opt.inccommand = "split"
 vim.opt.cursorline = false
 vim.opt.scrolloff = 10
 vim.opt.confirm = true
+vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
 vim.opt.fillchars = [[eob: ,fold: ,foldopen:,foldsep: ,foldclose:]]
 vim.opt.foldcolumn = "1"
 vim.opt.foldlevel = 99
@@ -41,4 +37,4 @@ vim.opt.foldenable = true
 vim.opt.cmdheight = 0
 vim.opt.whichwrap:append("<>[]hl")
 vim.opt.laststatus = 3
-vim.g.have_nerd_font = true
+vim.opt.clipboard = "unnamedplus"
