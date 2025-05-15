@@ -1,0 +1,28 @@
+custom-shader-animation = true
+
+window-decoration = false
+window-padding-balance = true
+window-padding-y = 8
+window-padding-x = 10
+
+background-opacity = 0.9
+background-blur-radius = 20
+
+theme = tokyonight
+
+font-size = 12
+font-family = Liga SFMono Nerd Font
+
+keybind = ctrl+alt+o=toggle_tab_overview
+keybind = ctrl+h=toggle_visibility
+keybind = ctrl+d=toggle_window_decorations
+
+mouse-scroll-multiplier = 2
+
+gtk-titlebar = true
+gtk-wide-tabs = false
+gtk-adwaita = false
+
+cursor-style = underline
+cursor-style-blink = false
+
